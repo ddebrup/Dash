@@ -11,17 +11,17 @@
      <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
      <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
      <link href="css/styles.css" rel="stylesheet">
-     
+     <link rel="icon" type="image/gif/png" href="/img/title-icon.ico">
      <title>Welcome!</title>
 </head>
 <body>
     <nav class="navbar navbar-inverse navbar-dark navbar-expand-sm fixed-top">
         <div class="container">
-           <a class="navbar-brand" href="#"><span class="fa fa-columns fa-lg"></span> Dash</a>
-                <div class="collapse navbar-collapse" id="Navbar">
+           <a class="navbar-brand" id="logonav" href="#"><span class="fa fa-columns fa-lg"></span> Dash</a>
+                <div class="navbar-right collapse navbar-collapse" id="Navbar">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span> Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-info fa-lg"></span> About</a></li>                        <li class="nav-item dropdown">
+                        <li class="nav-item"><a class="nav-link" href="/aboutus.html"><span class="fa fa-info fa-lg"></span> About</a></li>                        <li class="nav-item dropdown">
                             <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="fa fa-caret-down fa-lg"></span> Solutions
                             </a>
@@ -34,7 +34,11 @@
                           </li>
                     
                         <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
-                    </ul>       
+                    </ul>      
+                    <span class="navbar-text">
+                        <a data-toggle="modal" data-target="#loginModal">
+                        <span class="fa fa-sign-in"></span> Login</a>
+                    </span> 
                 </div>
                      
         </div>
@@ -42,6 +46,43 @@
             <span class="navbar-toggler-icon"></span>
         </button>
     </nav>
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Login </h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-sm-4">
+                                    <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                                    <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3" placeholder="Enter email">
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label class="sr-only" for="exampleInputPassword3">Password</label>
+                                <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3" placeholder="Password">
+                            </div>
+                            <div class="col-sm-auto">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"> Remember me
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>        
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="jumbotron jumbotron-fluid" id="heading-jumbo">
         <div class="container">
             <div class="row">
@@ -50,7 +91,7 @@
                     <h2>Simplifying Lives!</h2>
                     <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. </p>
                     <br>
-                    <p><a class="btn btn-light btn-md" href="#" role="button">Learn more</a></p>
+                    <p><a class="btn btn-light btn-md" href="#serve" id="learn-more" role="button">Learn more</a></p>
                   </div>
                   
                   <div class="col-6 offset-1 col-xs-12">
@@ -61,9 +102,12 @@
          
         </div>
       </div>
-      <div class="sectiontitle">
-        <h2>Industries We Serve</h2>
-        <span class="headerLine"></span>
+      <div class="section" id="serve">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <h2 class="mt-5 text-center">Industries We Serve</h2>
+            </div>
+        </div>
       </div>
       <div class="container mt-5 mb-5" id="services">
          
@@ -97,12 +141,12 @@
            
           <div class="row mt-5 btn-group-toggle">
               
-            <div class="col-3 offset-1 col-xs-6">
+            <div class="col-3 offset-1 col-xs-11">
               <button class="btn btn-lg btn-dark btn-block" type="button" data-toggle="modal" data-target="#govt">
                 <span class="fa fa-gavel fa-md"> Government</span>
               </button>
             </div>
-            <div class="col-2 col-xs-6">
+            <div class="col-2 col-xs-12">
               <button class="btn btn-lg btn-dark btn-block" type="button" data-toggle="modal" data-target="#retail">
                 <span class="fa fa-shopping-bag fa-md"> Retail</span>
               </button>
@@ -277,41 +321,249 @@
         </div>
       </div>
  
-      
-      <div class="sectiontitle">
-        <h2>Projects statistics</h2>
-        <span class="headerLine"></span>
-    </div>
-    <div id="projectFacts" class="sectionClass">
-        <div class="fullWidth eight columns">
-            <div class="projectFactsWrap ">
-                <div class="item wow fadeInUpBig animated animated" data-number="12" style="visibility: visible;">
-                    <i class="fa fa-briefcase"></i>
-                    <p id="number1" class="number">12</p>
-                    <span></span>
-                    <p>Projects done</p>
-                </div>
-                <div class="item wow fadeInUpBig animated animated" data-number="55" style="visibility: visible;">
-                    <i class="fa fa-smile-o"></i>
-                    <p id="number2" class="number">55</p>
-                    <span></span>
-                    <p>Happy clients</p>
-                </div>
-                <div class="item wow fadeInUpBig animated animated" data-number="359" style="visibility: visible;">
-                    <i class="fa fa-coffee"></i>
-                    <p id="number3" class="number">359</p>
-                    <span></span>
-                    <p>Cups of coffee</p>
-                </div>
-                <div class="item wow fadeInUpBig animated animated" data-number="246" style="visibility: visible;">
-                    <i class="fa fa-trophy"></i>
-                    <p id="number4" class="number">246</p>
-                    <span></span>
-                    <p>Awards</p>
+     <!-- Why Us Section -->
+	<section class="why-us">
+		<div class="container">
+	        <div class="row">
+				<div class="col-md-8 offset-md-2">
+					<h2 class="mt-5 text-center">Why Choose Us</h2>
+					<p class="mb-5 text-center">Why choose us section design HTML is created by using Bootstrap and custom HTML CSS. This our services section cards are more beautiful with pure CSS hover effects.</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-6 col-lg-4">
+					<div class="box">
+						<span>01</span>
+						<h4><a href="#">Why Lorem Ipsum</a></h4>
+						<p>There are many variations of passages of available, but the majority have suffered alteration in some form</p>
+						<img src="/images/image-one.jpg" alt="">
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-lg-4">
+					<div class="box">
+						<span>02</span>
+						<h4><a href="#">Why do we use it</a></h4>
+						<p>There are many variations of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
+						<img src="/images/image-two.jpg" alt="">
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-lg-4">
+					<div class="box">
+						<span>03</span>
+						<h4><a href="#">Can I get some</a></h4>
+						<p>There are many variations of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
+						<img src="/images/image-three.jpg" alt="">
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-lg-4">
+					<div class="box">
+						<span>04</span>
+						<h4><a href="#">Why Lorem Ipsum</a></h4>
+						<p>There are many variations of passages of Lorem Ipsum available, the majority have suffered alteration in some form</p>
+						<img src="/images/image-four.jpg" alt="">
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-lg-4">
+					<div class="box">
+						<span>05</span>
+						<h4><a href="#">Why do we use it</a></h4>
+						<p>There are many of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
+						<img src="/images/image-five.jpg" alt="">
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-lg-4">
+					<div class="box">
+						<span>06</span>
+						<h4><a href="#">Can I get some</a></h4>
+						<p>There are variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
+						<img src="/images/image-six.jpg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Why Us Section -->
+    
+   
+    <section class="module parallax parallax-1" id="statistics">
+    
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <h2 class="mt-5 text-center">Project Statistics</h2>
                 </div>
             </div>
         </div>
-    </div>
+
+       
+     
+            <div id="projectFacts" class="sectionClass">
+                <div class="fullWidth eight columns">
+                    <div class="projectFactsWrap ">
+                        <div class="item wow fadeInUpBig animated animated" data-number="12" style="visibility: visible;">
+                            <i class="fa fa-briefcase"></i>
+                            <p id="number1" class="number">12</p>
+                            <span></span>
+                            <p>Projects done</p>
+                        </div>
+                        <div class="item wow fadeInUpBig animated animated" data-number="55" style="visibility: visible;">
+                            <i class="fa fa-smile-o"></i>
+                            <p id="number2" class="number">55</p>
+                            <span></span>
+                            <p>Happy clients</p>
+                        </div>
+                        <div class="item wow fadeInUpBig animated animated" data-number="359" style="visibility: visible;">
+                            <i class="fa fa-coffee"></i>
+                            <p id="number3" class="number">359</p>
+                            <span></span>
+                            <p>Cups of coffee</p>
+                        </div>
+                        <div class="item wow fadeInUpBig animated animated" data-number="246" style="visibility: visible;">
+                            <i class="fa fa-trophy"></i>
+                            <p id="number4" class="number">246</p>
+                            <span></span>
+                            <p>Awards</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+      </section>
+      
+      <section class="module parallax parallax-2 section-medium section-arrow--bottom-center section-arrow-primary-color bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-white text-center">
+                    <h2 class="section-title "> What Others Say About Us</h2>
+                    <p class="section-sub-title">
+                        We are a passionate data analytics agency that specializes in beautiful and easy-to-
+                        <br> use digital solutions &amp; day-to-day monitoring services.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-primary t-bordered">
+        <div class="container">
+            <div class="row testimonial-three testimonial-three--col-three">
+                <div class="col-md-4 testimonial-three-col">
+                    <div class="testimonial-inner">
+                        <div class="testimonial-image" itemprop="image">
+                            <img width="180" height="180" src="/img/avatar1.png">
+                        </div>
+                        <div class="testimonial-content">
+                            <p>
+                                Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+                            </p>
+                        </div>
+                        <div class="testimonial-meta">
+                            <strong class="testimonial-name" itemprop="name">Anna Vandana</strong>
+                            <span class="testimonial-job-title" itemprop="jobTitle">CEO</span> – <a class="testimonial-link" href="#" >Media Wiki</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-md-4 testimonial-three-col">
+                    <div class="testimonial-inner">
+                        <div class="testimonial-image" itemprop="image">
+                            <img width="180" height="180" src="/img/avatar2.png">
+                        </div>
+    
+                        <div class="testimonial-content">
+                            <p>
+                                In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.
+                            </p>
+                        </div>
+    
+                        <div class="testimonial-meta">
+                            <strong class="testimonial-name" itemprop="name">Anna Vandana</strong>
+                            <span class="testimonial-job-title" itemprop="jobTitle">CEO</span> – <a class="testimonial-link" href="#" >Media Wiki</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-md-4 testimonial-three-col">
+                    <div class="testimonial-inner">
+                        <div class="testimonial-image" itemprop="image">
+                            <img width="180" height="180" src="/img/avatar3.png">
+                        </div>
+                        <div class="testimonial-content">
+                            <p>
+                                Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+                            </p>
+                        </div>
+                        <div class="testimonial-meta">
+                            <strong class="testimonial-name" itemprop="name">Anna Vandana</strong>
+                            <span class="testimonial-job-title" itemprop="jobTitle">CEO</span> – <a class="testimonial-link" href="#" >Media Wiki</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-md-4 testimonial-three-col">
+                    <div class="testimonial-inner">
+                        <div class="testimonial-image" itemprop="image">
+                            <img width="180" height="180" src="/img/avatar4.png">
+                        </div>
+    
+                        <div class="testimonial-content">
+                            <p>
+                                In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.
+                            </p>
+                        </div>
+    
+                        <div class="testimonial-meta">
+                            <strong class="testimonial-name" itemprop="name">Anna Vandana</strong>
+                            <span class="testimonial-job-title" itemprop="jobTitle">CEO</span> – <a class="testimonial-link" href="#" >Media Wiki</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-md-4 testimonial-three-col">
+                    <div class="testimonial-inner">
+                        <div class="testimonial-image" itemprop="image">
+                            <img width="180" height="180" src="/img/avatar5.png">
+                        </div>
+                        <div class="testimonial-content">
+                            <p>
+                                Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+                            </p>
+                        </div>
+                        <div class="testimonial-meta">
+                            <strong class="testimonial-name" itemprop="name">Anna Vandana</strong>
+                            <span class="testimonial-job-title" itemprop="jobTitle">CEO</span> – <a class="testimonial-link" href="#">Media Wiki</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-md-4 testimonial-three-col">
+                    <div class="testimonial-inner">
+                        <div class="testimonial-image" itemprop="image">
+                            <img width="180" height="180" src="/img/avatar6.png">
+                        </div>
+    
+                        <div class="testimonial-content">
+                            <p>
+                                In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.
+                            </p>
+                        </div>
+    
+                        <div class="testimonial-meta">
+                            <strong class="testimonial-name" itemprop="name">Anna Vandana</strong>
+                            <span class="testimonial-job-title" itemprop="jobTitle">CEO</span> – <a class="testimonial-link" href="#" >Media Wiki</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+
       <footer class="footer">
         <div class="container">
             <div class="row">             
@@ -364,5 +616,5 @@
      <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
      <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
      <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-     <script src="js/scripts.js"></script>
+     <script src="js/script.js"></script>
 </body>
