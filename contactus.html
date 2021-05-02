@@ -21,19 +21,19 @@
                 <div class="navbar-right collapse navbar-collapse" id="Navbar">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item"><a class="nav-link" href="index.html"><span class="fa fa-home fa-lg"></span> Home</a></li>
-                        <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-info fa-lg"></span> About</a></li>                        <li class="nav-item dropdown">
+                        <li class="nav-item active"><a class="nav-link" href="aboutus.html"><span class="fa fa-info fa-lg"></span> About</a></li>                        <li class="nav-item dropdown">
                             <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="fa fa-caret-down fa-lg"></span> Solutions
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Covid 19 Analytics</a>
-                                <a class="dropdown-item" href="#">Crowd Prediction</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Security Alert</a>
-                              </div>
+                              <a class="dropdown-item" href="#">Covid 19 Analytics</a>
+                              <a class="dropdown-item" href="#">Crowd Prediction</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#">Security Alert</a>
+                            </div>
                           </li>
                     
-                        <li class="nav-item"><a class="nav-link" href="contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                     </ul>      
                     <span class="navbar-text">
                         <a data-toggle="modal" data-target="#loginModal">
@@ -87,7 +87,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="cover-text col-4 offset-1 col-xs-10 order-xs-last">
-                    <h1 class="display-4">ABOUT<br>US/</h1>
+                    <h1 class="display-4">CONTACT<br>US/</h1>
                     
                     <p class="lead">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce convallis pellentesque metus id lacinia.
@@ -98,147 +98,89 @@
                 </div>
     
                 <div class="col-5 col-xs-10 order-xs-first">
-                   <img src="img/about.svg">
+                   <img src="img/contact.svg">
                 </div>
             </div>
         </div>
     </section>
-    <ul class="breadcrumb">
+     <ul style="margin-bottom: 0;" class="breadcrumb" id="crumb-contact">
         <li><a href="index.html">Home</a></li>
-        <li><a href="#">About</a></li>
-       <!--<li><a href="#">Summer 15</a></li>
-        <li>Italy</li>--> 
+        <li><a href="#">Contact</a></li>
+       
       </ul> 
     
-    <!-- About section -->
-	<section id="what-we-do">
+      <div class="row" id="contatti">
+        <div class="container mt-5" >
         
-		<div class="container-fluid">
-            <div class="row heading heading-icon">
-                <h2 style="color: black; padding: 0; margin: 0;">Our Mission</h2>
-                <p class="text-center text-muted h5 text-center">Having and managing a correct marketing strategy is crucial in a fast moving market.</p>
+            <div class="row" style="height:550px;">
+              <div class="col-md-6 maps" >
+                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11880.492291371422!2d12.4922309!3d41.8902102!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x28f1c82e908503c4!2sColosseo!5e0!3m2!1sit!2sit!4v1524815927977" frameborder="0" style="border:0" allowfullscreen></iframe>
+              </div>
+              <div class="col-md-6">
+                <h2 class="text-uppercase mt-3 font-weight-bold text-white">DROP US A MESSAGE</h2>
+                <form action="">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <input type="text" class="form-control mt-2" placeholder="First Name" required>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <input type="text" class="form-control mt-2" placeholder="Last Name" required>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <input type="email" class="form-control mt-2" placeholder="Email" required>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <input type="number" class="form-control mt-2" placeholder="Telephone" required>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-group">
+                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Message" rows="3" required></textarea>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                    <div class="form-group">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                        <label class="form-check-label" for="invalidCheck2">
+                          Subscribe to updates
+                        </label>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="col-12">
+                      <button class="btn btn-light" type="submit">Submit</button>
+                    </div>
+                  </div>
+                </form>
+                <div class="text-white">
+                <h2 class="text-uppercase mt-4 font-weight-bold">other Info</h2>
+        
+                <i class="fa fa-phone mt-3"></i> <a href="tel:+">(+39) 123456</a><br>
+                <i class="fa fa-phone mt-3"></i> <a href="tel:+">(+39) 123456</a><br>
+                <i class="fa fa-envelope mt-3"></i> <a href="">info@test.it</a><br>
+                <i class="fa fa-globe mt-3"></i> Piazza del Colosseo, 1, 00184 Roma<br>
+                <i class="fa fa-globe mt-3"></i> Piazza del Colosseo, 1, 00184 Roma<br>
+                <div class="my-4">
+                <a href=""><i class="fa fa-facebook fa-3x pr-4"></i></a>
+                <a href=""><i class="fabfa-linkedin fa-3x"></i></a>
+                </div>
+                </div>
+              </div>
+        
             </div>
-		
-		
-			<div class="row mt-5">
-				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-					<div class="card">
-						<div class="card-block block-1">
-							<h3 class="card-title">Special title</h3>
-							<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-							<a href="https://www.fiverr.com/share/qb8D02" title="Read more" class="read-more" >Read more<i class="fa fa-angle-double-right ml-2"></i></a>
-						</div>
-					</div>
-				</div>
-				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-					<div class="card">
-						<div class="card-block block-2">
-							<h3 class="card-title">Special title</h3>
-							<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-							<a href="https://www.fiverr.com/share/qb8D02" title="Read more" class="read-more" >Read more<i class="fa fa-angle-double-right ml-2"></i></a>
-						</div>
-					</div>
-				</div>
-				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-					<div class="card">
-						<div class="card-block block-3">
-							<h3 class="card-title">Special title</h3>
-							<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-							<a href="https://www.fiverr.com/share/qb8D02" title="Read more" class="read-more" >Read more<i class="fa fa-angle-double-right ml-2"></i></a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-					<div class="card">
-						<div class="card-block block-4">
-							<h3 class="card-title">Special title</h3>
-							<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-							<a href="https://www.fiverr.com/share/qb8D02" title="Read more" class="read-more" >Read more<i class="fa fa-angle-double-right ml-2"></i></a>
-						</div>
-					</div>
-				</div>
-				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-					<div class="card">
-						<div class="card-block block-5">
-							<h3 class="card-title">Special title</h3>
-							<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-							<a href="https://www.fiverr.com/share/qb8D02" title="Read more" class="read-more" >Read more<i class="fa fa-angle-double-right ml-2"></i></a>
-						</div>
-					</div>
-				</div>
-				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-					<div class="card">
-						<div class="card-block block-6">
-							<h3 class="card-title">Special title</h3>
-							<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-							<a href="https://www.fiverr.com/share/qb8D02" title="Read more" class="read-more" >Read more<i class="fa fa-angle-double-right ml-2"></i></a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>	
-	</section>
-	<!-- /About section -->
-
-    <section class="our-webcoderskull padding-lg">
-        <div class="container">
-          <div class="row heading heading-icon">
-              <h2>Our Team</h2>
-          </div>
-          <ul class="row">
-            <li class="col-12 col-md-6 col-lg-3">
-                <div class="cnt-block equal-hight" style="height: 349px;">
-                  <figure><img src="/img/avatar4.png" class="img-responsive" alt=""></figure>
-                  <h3><a href="http://www.webcoderskull.com/">Web coder skull</a></h3>
-                  <p>Freelance Web Developer</p>
-                  <ul class="follow-us clearfix">
-                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                  </ul>
-                </div>
-            </li>
-            <li class="col-12 col-md-6 col-lg-3">
-                <div class="cnt-block equal-hight" style="height: 349px;">
-                  <figure><img src="/img/avatar3.png" class="img-responsive" alt=""></figure>
-                  <h3><a href="#">Kappua </a></h3>
-                  <p>Freelance Web Developer</p>
-                  <ul class="follow-us clearfix">
-                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                  </ul>
-                </div>
-            </li>
-            <li class="col-12 col-md-6 col-lg-3">
-                <div class="cnt-block equal-hight" style="height: 349px;">
-                  <figure><img src="/img/avatar2.png" class="img-responsive" alt=""></figure>
-                  <h3><a href="http://www.webcoderskull.com/">Manish </a></h3>
-                  <p>Freelance Web Developer</p>
-                  <ul class="follow-us clearfix">
-                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                  </ul>
-                </div>
-             </li>
-            <li class="col-12 col-md-6 col-lg-3">
-                <div class="cnt-block equal-hight" style="height: 349px;">
-                  <figure><img src="/img/avatar1.png" class="img-responsive" alt=""></figure>
-                  <h3><a href="http://www.webcoderskull.com/">Atul </a></h3>
-                  <p>Freelance Web Developer</p>
-                  <ul class="follow-us clearfix">
-                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                  </ul>
-                </div>
-            </li>
-          </ul>
         </div>
-      </section>
+        </div>
+       
+
+  
       <footer class="footer">
         <div class="container">
             <div class="row">             
