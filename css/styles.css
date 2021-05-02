@@ -34,6 +34,7 @@ body{
       background-color: black;
       min-height: 20rem;
       padding-top: 5rem;
+      margin-bottom: 0;
       color: white;
   }
 
@@ -879,4 +880,108 @@ ul{
 }
 .our-webcoderskull .cnt-block .follow-us li .fa:hover{ 
    color:#025a8e;
+}
+
+ /* Style the list */
+ ul.breadcrumb {
+    border-radius: 0 !important;
+    list-style: none;
+    background-color:rgb(116, 248, 160);
+
+
+  }
+  
+  /* Display list items side by side */
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+  }
+  
+  /* Add a slash symbol (/) before/behind each list item */
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+  }
+  
+  /* Add a color to all links inside the list */
+  ul.breadcrumb li a {
+    color: #0275d8;
+    text-decoration: none;
+  }
+  
+  /* Add a color on mouse-over */
+  ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+  } 
+
+  #what-we-do{
+	background:#ffffff;
+    padding: 3rem 0 3rem 0;
+}
+#what-we-do .card{
+	padding: 1rem!important;
+	border: none;
+	margin-bottom:1rem;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#what-we-do .card:hover{
+	-webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+	-moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+	box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+}
+#what-we-do .card .card-block{
+	padding-left: 50px;
+    position: relative;
+}
+#what-we-do .card .card-block a{
+	color: #007b5e !important;
+	font-weight:700;
+	text-decoration:none;
+}
+#what-we-do .card .card-block a i{
+	display:none;
+	
+}
+#what-we-do .card:hover .card-block a i{
+	display:inline-block;
+	font-weight:700;
+	
+}
+#what-we-do .card .card-block:before{
+	font-family: FontAwesome;
+    position: absolute;
+    font-size: 39px;
+    color: #007b5e;
+    left: 0;
+	-webkit-transition: -webkit-transform .2s ease-in-out;
+    transition:transform .2s ease-in-out;
+}
+#what-we-do .card .block-1:before{
+    content: "\f0e7";
+}
+#what-we-do .card .block-2:before{
+    content: "\f0eb";
+}
+#what-we-do .card .block-3:before{
+    content: "\f00c";
+}
+#what-we-do .card .block-4:before{
+    content: "\f209";
+}
+#what-we-do .card .block-5:before{
+    content: "\f0a1";
+}
+#what-we-do .card .block-6:before{
+    content: "\f218";
+}
+#what-we-do .card:hover .card-block:before{
+	-webkit-transform: rotate(360deg);
+	transform: rotate(360deg);	
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
 }
